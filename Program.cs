@@ -13,6 +13,12 @@ namespace CsharpTesting
             int time = 20;
             string result = (time < 18) ? "Good day." : "Good evening.";
             Console.WriteLine(result);
+
+            string[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+            foreach (string i in cars) 
+            {
+                Console.WriteLine(i);
+            }
         }
     }
 }
