@@ -9,6 +9,10 @@ namespace CsharpTesting
             string lastName = "Doe";
             string name = $"My full name is: {firstName} {lastName}";
             Console.WriteLine(name[0]);
+
+            int time = 20;
+            string result = (time < 18) ? "Good day." : "Good evening.";
+            Console.WriteLine(result);
         }
     }
 }
