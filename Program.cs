@@ -19,6 +19,11 @@ namespace CsharpTesting
             {
                 Console.WriteLine(i);
             }
+            MyMethod();
+        }
+        static void MyMethod()
+        {
+            Console.WriteLine("This is testing");
         }
     }
 }
