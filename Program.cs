@@ -1,34 +1,38 @@
 ﻿using System;
 namespace CsharpTesting
 {
+    class Animal
+    {
+        public virtual void animalSound()
+        {
+            Console.WriteLine("The animal makes a sound");
+        }
+    }
+    class Pig : Animal
+    {
+        public override void animalSound()
+        {
+            Console.WriteLine("The pig says: wee wee");
+        }
+    }
+    class Dog : Animal
+    {
+        public override void animalSound()
+        {
+            Console.WriteLine("The Dog says: bow wow");
+        }
+    }
     class Program
     {
-        string color = "Red";
-
         static void Main(string[] args)
         {
-            Program program = new Program();
-            program.color = "Blue";
-            Console.WriteLine("" + program.color);
-            string firstName = "John";
-            string lastName = "Doe";
-            string name = $"My full name is: {firstName} {lastName}";
-            Console.WriteLine(name[0]);
-
-            int time = 20;
-            string result = (time < 18) ? "Good day." : "Good evening.";
-            Console.WriteLine(result);
-
-            string[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
-            foreach (string i in cars) 
-            {
-                Console.WriteLine(i);
-            }
-            MyMethod();
+            Animal myAnimal = new Animal();
+            Animal myPig = new Pig();
+            Animal myDog = new Dog();
+            myAnimal.animalSound();
+            myPig.animalSound();
+            myDog.animalSound();
         }
-        static void MyMethod()
-        {
-            Console.WriteLine("This is testing");
-        }
+       
     }
 }
