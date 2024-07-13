@@ -3,8 +3,13 @@ namespace CsharpTesting
 {
     class Program
     {
+        string color = "Red";
+
         static void Main(string[] args)
         {
+            Program program = new Program();
+            program.color = "Blue";
+            Console.WriteLine("" + program.color);
             string firstName = "John";
             string lastName = "Doe";
             string name = $"My full name is: {firstName} {lastName}";
