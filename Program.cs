@@ -1,38 +1,35 @@
-﻿using System;
-namespace CsharpTesting
+﻿
+class Animal
 {
-    class Animal
+    public virtual void animalSound()
     {
-        public virtual void animalSound()
-        {
-            Console.WriteLine("The animal makes a sound");
-        }
+        Console.WriteLine("The animal makes a sound");
     }
-    class Pig : Animal
+}
+class Pig : Animal
+{
+    public override void animalSound()
     {
-        public override void animalSound()
-        {
-            Console.WriteLine("The pig says: wee wee");
-        }
+        Console.WriteLine("The pig says: wee wee");
     }
-    class Dog : Animal
+}
+class Dog : Animal
+{
+    public override void animalSound()
     {
-        public override void animalSound()
-        {
-            Console.WriteLine("The Dog says: bow wow");
-        }
+        Console.WriteLine("The Dog says: bow wow");
     }
-    class Program
+}
+class Program
+{
+    static void Main(string[] args)
     {
-        static void Main(string[] args)
-        {
-            Animal myAnimal = new Animal();
-            Animal myPig = new Pig();
-            Animal myDog = new Dog();
-            myAnimal.animalSound();
-            myPig.animalSound();
-            myDog.animalSound();
-        }
-       
+        Animal myAnimal = new Animal();
+        Animal myPig = new Pig();
+        Animal myDog = new Dog();
+        myAnimal.animalSound();
+        myPig.animalSound();
+        myDog.animalSound();
     }
+
 }
