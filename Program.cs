@@ -1,7 +1,11 @@
-﻿class Program
+﻿public class Program
 {
-    static void Main(string[] args)
+    public static void Main(string[] args)
     {
-        Console.WriteLine($"{6+2}");
+        Console.WriteLine("Enter a number: ");
+        int n = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine(n);
+        string? name = Console.ReadLine();
+        Console.WriteLine(name);
     }
 }
