@@ -5,5 +5,7 @@ public class Program
     {
         SimpleInput simpleInput= new SimpleInput();
         simpleInput.UserInput();
+        CircleArea circleArea= new CircleArea();
+        circleArea.DisplaySomeThing();
     }
 }
