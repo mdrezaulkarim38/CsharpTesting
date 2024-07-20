@@ -1,4 +1,5 @@
-﻿
+﻿using CsharpTesting;
+
 class Animal
 {
     public virtual void animalSound()
@@ -24,6 +25,9 @@ class Program
 {
     static void Main(string[] args)
     {
+        Test test= new Test();
+        string MyName = test.getName("Shuvo");
+        Console.WriteLine(MyName);
         Animal myAnimal = new Animal();
         Animal myPig = new Pig();
         Animal myDog = new Dog();
