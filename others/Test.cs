@@ -1,4 +1,4 @@
-namespace CsharpTesting;
+namespace CsharpTesting.others;
 public class Test{
     public string getName(string name)
     {
