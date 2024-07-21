@@ -7,7 +7,9 @@ public class Program
         // simpleInput.UserInput();
         // CircleArea circleArea= new CircleArea();
         // circleArea.DisplaySomeThing();
-        Coordinate coordinate= new Coordinate();
-        coordinate.CalculateCoordinate();
+        // Coordinate coordinate= new Coordinate();
+        // coordinate.CalculateCoordinate();
+        OddEven oddEven= new OddEven();
+        oddEven.OddEvenDisplay();
     }
 }
