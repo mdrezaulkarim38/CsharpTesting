@@ -11,7 +11,8 @@ public class Program
         // coordinate.CalculateCoordinate();
         // OddEven oddEven= new OddEven();
         // oddEven.OddEvenDisplay();
-        LeapYear leapYear = new LeapYear();
-        leapYear.getLeapYear();
+        // LeapYear leapYear = new LeapYear();
+        // leapYear.getLeapYear();
+        
     }
 }
