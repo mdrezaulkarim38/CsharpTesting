@@ -1,5 +1,5 @@
 /*
-*Now We are going to try this one 
+* Today I am going to show you this math work
 * 1 + 2 + 3 + 4 + 5 + 6 + .... + n = ?
 * 1 + 2 + 3 = 6 if n = 3
 */
@@ -9,14 +9,16 @@ public class Addition
 {
     public void displayCalculation()
     {
-        Console.WriteLine("Enter N value number: ");
+        // need to Print for N value
+        Console.Write("Enter the value of N: ");
         int n = Convert.ToInt32(Console.ReadLine());
-        // Now We are going to try for loop
+        // Total store in sum
         int sum = 0;
+        // Now the calculation part
         for(int i = 1; i <= n; i++)
         {
             sum += i;
         }
-        Console.WriteLine("The addition of n : "+ sum);
+        Console.WriteLine("The Total of this N value: "+ sum);
     }
 }

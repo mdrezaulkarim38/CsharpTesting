@@ -14,7 +14,7 @@ public class Program
         // oddEven.OddEvenDisplay();
         // LeapYear leapYear = new LeapYear();
         // leapYear.getLeapYear();
-        // Addition addition = new Addition();
-        // addition.displayCalculation();
+        Addition addition = new Addition();
+        addition.displayCalculation();
     }
 }
