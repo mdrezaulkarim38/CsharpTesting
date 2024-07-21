@@ -9,7 +9,9 @@ public class Program
         // circleArea.DisplaySomeThing();
         // Coordinate coordinate= new Coordinate();
         // coordinate.CalculateCoordinate();
-        OddEven oddEven= new OddEven();
-        oddEven.OddEvenDisplay();
+        // OddEven oddEven= new OddEven();
+        // oddEven.OddEvenDisplay();
+        LeapYear leapYear = new LeapYear();
+        leapYear.getLeapYear();
     }
 }
