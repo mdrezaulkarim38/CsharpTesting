@@ -1,5 +1,6 @@
 ﻿using CsharpTesting.AllProgramFiles;
 using CsharpTesting.AllProgramFiles.MathCode;
+using CsharpTesting.AllProgramFiles.Pyramid;
 public class Program
 {
     public static void Main(string[] args)
@@ -16,7 +17,9 @@ public class Program
         // leapYear.getLeapYear();
         // Addition addition = new Addition();
         // addition.displayCalculation();
-        SquareAddition squareAddition = new SquareAddition();
-        squareAddition.displayCalculation();
+        // SquareAddition squareAddition = new SquareAddition();
+        // squareAddition.displayCalculation();
+        Triangle triangle = new Triangle();
+        triangle.getTriangle();
     }
 }
