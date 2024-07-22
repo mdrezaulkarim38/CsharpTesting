@@ -21,7 +21,7 @@ public class LeapYear
             Console.WriteLine($"{year} is not leap year");
         }
     }
-    public void SorthLeapYearCode()
+    public void SortLeapYearCode()
     {
         Console.Write("Enter a Year: ");
         int year = Convert.ToInt32(Console.ReadLine());
