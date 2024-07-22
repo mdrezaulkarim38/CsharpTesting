@@ -1,5 +1,6 @@
 ﻿using CsharpTesting.AllProgramFiles;
 using CsharpTesting.AllProgramFiles.MathCode;
+using CsharpTesting.AllProgramFiles.MaxNumber;
 using CsharpTesting.AllProgramFiles.Pyramid;
 public class Program
 {
@@ -19,7 +20,9 @@ public class Program
         // addition.displayCalculation();
         // SquareAddition squareAddition = new SquareAddition();
         // squareAddition.displayCalculation();
-        Triangle triangle = new Triangle();
-        triangle.getTriangle();
+        // Triangle triangle = new Triangle();
+        // triangle.getTriangle();
+        MaxBetweenNumber maxBetweenNumber = new MaxBetweenNumber();
+        maxBetweenNumber.getMaxTwoNumber();
     }
 }
