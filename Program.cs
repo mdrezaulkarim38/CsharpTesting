@@ -3,6 +3,7 @@ using CsharpTesting.AllProgramFiles.MathCode;
 using CsharpTesting.AllProgramFiles.MaxNumber;
 using CsharpTesting.AllProgramFiles.NumberTheory;
 using CsharpTesting.AllProgramFiles.Pyramid;
+using CsharpTesting.AllProgramFiles.Sorting;
 public class Program
 {
     public static void Main(string[] args)
@@ -26,7 +27,7 @@ public class Program
         // MaxBetweenNumber maxBetweenNumber = new MaxBetweenNumber();
         // maxBetweenNumber.getMaxTwoNumber();
         // maxBetweenNumber.getMaxThreeNumber();
-        Numbers numbers= new Numbers();
+        /* Numbers numbers= new Numbers();
         Console.Write("Enter a number: ");
         int n = Convert.ToInt32(Console.ReadLine());
         if(numbers.IsPrimeNumber(n)){
@@ -35,6 +36,8 @@ public class Program
         else
         {
             Console.WriteLine("Number is not prime");
-        }
+        } */
+        AllSorting allSorting = new AllSorting();
+        allSorting.InsertionSort([1,2,3,4,5,6,7]);
     }
 }
