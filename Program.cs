@@ -23,6 +23,7 @@ public class Program
         // Triangle triangle = new Triangle();
         // triangle.getTriangle();
         MaxBetweenNumber maxBetweenNumber = new MaxBetweenNumber();
-        maxBetweenNumber.getMaxTwoNumber();
+        // maxBetweenNumber.getMaxTwoNumber();
+        maxBetweenNumber.getMaxThreeNumber();
     }
 }

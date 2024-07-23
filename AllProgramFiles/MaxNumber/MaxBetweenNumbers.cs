@@ -33,21 +33,17 @@ public class MaxBetweenNumber
         int numberTwo = Convert.ToInt32(Console.ReadLine());
         Console.WriteLine("Enter third number: ");
         int numberThree = Convert.ToInt32(Console.ReadLine());
-        if(numberOne >= numberTwo)
+        if(numberOne >= numberTwo && numberOne >= numberThree)
         {
-            if(numberOne >= numberThree)
-            {
-                Console.WriteLine($"First number is greater {numberOne}");
-            }
-            else if(numberTwo >= numberThree)
-            {
-                Console.WriteLine($"Second number is greater {numberTwo}");
-            }
-            else 
-            {
-                Console.WriteLine($"Third number is greater {numberThree}");
-            }
+            Console.WriteLine($"First number is greater {numberOne}");
         }
-        
+        else if(numberTwo >= numberOne && numberTwo >= numberThree)
+        {
+            Console.WriteLine($"Second number is greater {numberTwo}");
+        }
+        else
+        {
+            Console.WriteLine($"Third number is greater {numberThree}");
+        }
     }
 }
