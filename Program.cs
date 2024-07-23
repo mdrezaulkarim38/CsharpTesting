@@ -26,10 +26,10 @@ public class Program
         // MaxBetweenNumber maxBetweenNumber = new MaxBetweenNumber();
         // maxBetweenNumber.getMaxTwoNumber();
         // maxBetweenNumber.getMaxThreeNumber();
-        PrimeNumber primeNumber= new PrimeNumber();
+        Numbers numbers= new Numbers();
         Console.Write("Enter a number: ");
         int n = Convert.ToInt32(Console.ReadLine());
-        if(primeNumber.IsPrimeNumber(n)){
+        if(numbers.IsPrimeNumber(n)){
             Console.WriteLine("Number is prime");
         }
         else
