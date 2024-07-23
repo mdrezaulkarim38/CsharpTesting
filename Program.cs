@@ -1,6 +1,7 @@
 ﻿using CsharpTesting.AllProgramFiles;
 using CsharpTesting.AllProgramFiles.MathCode;
 using CsharpTesting.AllProgramFiles.MaxNumber;
+using CsharpTesting.AllProgramFiles.NumberTheory;
 using CsharpTesting.AllProgramFiles.Pyramid;
 public class Program
 {
@@ -22,8 +23,18 @@ public class Program
         // squareAddition.displayCalculation();
         // Triangle triangle = new Triangle();
         // triangle.getTriangle();
-        MaxBetweenNumber maxBetweenNumber = new MaxBetweenNumber();
+        // MaxBetweenNumber maxBetweenNumber = new MaxBetweenNumber();
         // maxBetweenNumber.getMaxTwoNumber();
-        maxBetweenNumber.getMaxThreeNumber();
+        // maxBetweenNumber.getMaxThreeNumber();
+        PrimeNumber primeNumber= new PrimeNumber();
+        Console.Write("Enter a number: ");
+        int n = Convert.ToInt32(Console.ReadLine());
+        if(primeNumber.IsPrimeNumber(n)){
+            Console.WriteLine("Number is prime");
+        }
+        else
+        {
+            Console.WriteLine("Number is not prime");
+        }
     }
 }
