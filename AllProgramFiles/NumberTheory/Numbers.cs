@@ -22,4 +22,18 @@ public class Numbers
         }
         return gcd(b, a % b);
     }
+    public int bigMod(int a, int b, int M)
+    {
+        if(b == 0)
+        {
+            return 1 % M;
+        }
+        int x = bigMod(a, b / 2, M);
+        x = (x * x) % M;
+        if(b % 2 == 1) 
+        {
+            x = (x * a) % M;
+        }
+        return x;
+    }
 }
