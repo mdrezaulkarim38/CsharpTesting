@@ -38,6 +38,6 @@ public class Program
             Console.WriteLine("Number is not prime");
         } */
         AllSorting allSorting = new AllSorting();
-        allSorting.InsertionSort([1,2,3,4,5,6,7]);
+        allSorting.InsertionSort([5,8,3,1,7,2,9,6,4]);
     }
 }
