@@ -1,9 +1,9 @@
-﻿using CsharpTesting.AllProgramFiles;
+﻿/* using CsharpTesting.AllProgramFiles;
 using CsharpTesting.AllProgramFiles.MathCode;
 using CsharpTesting.AllProgramFiles.MaxNumber;
 using CsharpTesting.AllProgramFiles.NumberTheory;
-using CsharpTesting.AllProgramFiles.Pyramid;
-using CsharpTesting.AllProgramFiles.Sorting;
+using CsharpTesting.AllProgramFiles.Pyramid; */
+//using CsharpTesting.AllProgramFiles.Sorting;
 public class Program
 {
     public static void Main(string[] args)
@@ -37,7 +37,8 @@ public class Program
         {
             Console.WriteLine("Number is not prime");
         } */
-        AllSorting allSorting = new AllSorting();
-        allSorting.InsertionSort([5,8,3,1,7,2,9,6,4]);
+        /* AllSorting allSorting = new AllSorting();
+        allSorting.InsertionSort([5,8,3,1,7,2,9,6,4]); */
+        
     }
 }
