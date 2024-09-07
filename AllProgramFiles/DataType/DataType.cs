@@ -31,5 +31,10 @@ namespace CsharpTesting.AllProgramFiles.DataType
             Console.WriteLine("Unsinged short: "+ us);
             Console.WriteLine("Unsinged long"+ ul);
         }
+
+        public void viewDataTypeIncrement()
+        {
+            
+        }
     }
 }
