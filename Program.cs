@@ -4,6 +4,7 @@ using CsharpTesting.AllProgramFiles.MaxNumber;
 using CsharpTesting.AllProgramFiles.NumberTheory;
 using CsharpTesting.AllProgramFiles.Pyramid; */
 //using CsharpTesting.AllProgramFiles.Sorting;
+using CsharpTesting.AllProgramFiles.DataType;
 public class Program
 {
     public static void Main(string[] args)
@@ -39,6 +40,9 @@ public class Program
         } */
         /* AllSorting allSorting = new AllSorting();
         allSorting.InsertionSort([5,8,3,1,7,2,9,6,4]); */
+
+        DataType dataType = new DataType();
+        dataType.viewDataTypes();
         
     }
 }
