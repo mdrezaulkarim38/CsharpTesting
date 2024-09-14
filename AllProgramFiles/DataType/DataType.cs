@@ -50,5 +50,18 @@ namespace CsharpTesting.AllProgramFiles.DataType
                 Console.WriteLine("Hi Shuvo");
             }
         }
+        
+        public static void StringPrint()
+        {
+            string a  = "Superman";
+            a += "Shuvo";
+            Console.WriteLine(a);
+
+            object obj;
+            obj = 20;
+            Console.WriteLine(obj);
+
+            Console.WriteLine(obj.GetType());
+        }
     }
 }

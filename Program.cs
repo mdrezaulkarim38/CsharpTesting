@@ -45,6 +45,6 @@ public class Program
         DataType.ViewDataTypes();
         DataType.ViewDataTypeIncrement();
         DataType.Boolean();
-        
+        DataType.StringPrint();
     }
 }
