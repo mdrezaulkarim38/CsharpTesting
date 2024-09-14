@@ -9,25 +9,27 @@ public class Program
 {
     public static void Main(string[] args)
     {
-        // SimpleInput simpleInput= new SimpleInput();
-        // simpleInput.UserInput();
-        // CircleArea circleArea= new CircleArea();
-        // circleArea.DisplaySomeThing();
-        // Coordinate coordinate= new Coordinate();
-        // coordinate.CalculateCoordinate();
-        // OddEven oddEven= new OddEven();
-        // oddEven.OddEvenDisplay();
-        // LeapYear leapYear = new LeapYear();
-        // leapYear.getLeapYear();
-        // Addition addition = new Addition();
-        // addition.displayCalculation();
-        // SquareAddition squareAddition = new SquareAddition();
-        // squareAddition.displayCalculation();
-        // Triangle triangle = new Triangle();
-        // triangle.getTriangle();
-        // MaxBetweenNumber maxBetweenNumber = new MaxBetweenNumber();
-        // maxBetweenNumber.getMaxTwoNumber();
-        // maxBetweenNumber.getMaxThreeNumber();
+        /*
+        SimpleInput simpleInput= new SimpleInput();
+        simpleInput.UserInput();
+        CircleArea circleArea= new CircleArea();
+        circleArea.DisplaySomeThing();
+        Coordinate coordinate= new Coordinate();
+        coordinate.CalculateCoordinate();
+        OddEven oddEven= new OddEven();
+        oddEven.OddEvenDisplay();
+        LeapYear leapYear = new LeapYear();
+        leapYear.getLeapYear();
+        Addition addition = new Addition();
+        addition.displayCalculation();
+        SquareAddition squareAddition = new SquareAddition();
+        squareAddition.displayCalculation();
+        Triangle triangle = new Triangle();
+        triangle.getTriangle();
+        MaxBetweenNumber maxBetweenNumber = new MaxBetweenNumber();
+        maxBetweenNumber.getMaxTwoNumber();
+        maxBetweenNumber.getMaxThreeNumber();
+        */
         /* Numbers numbers= new Numbers();
         Console.Write("Enter a number: ");
         int n = Convert.ToInt32(Console.ReadLine());
@@ -40,11 +42,11 @@ public class Program
         } */
         /* AllSorting allSorting = new AllSorting();
         allSorting.InsertionSort([5,8,3,1,7,2,9,6,4]); */
-
-        
-        DataType.ViewDataTypes();
+        /* DataType.ViewDataTypes();
         DataType.ViewDataTypeIncrement();
         DataType.Boolean();
-        DataType.StringPrint();
+        DataType.StringPrint(); */
+
+        
     }
 }
