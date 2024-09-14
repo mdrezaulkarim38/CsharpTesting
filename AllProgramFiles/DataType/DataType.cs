@@ -7,7 +7,7 @@ namespace CsharpTesting.AllProgramFiles.DataType
 {
     public class DataType
     {
-        public void viewDataTypes()
+        public static void viewDataTypes()
         {
             char a = 's';
             int i = 89;
@@ -32,7 +32,7 @@ namespace CsharpTesting.AllProgramFiles.DataType
             Console.WriteLine("Unsinged long"+ ul);
         }
 
-        public void viewDataTypeIncrement()
+        public static void viewDataTypeIncrement()
         {
             sbyte a = 126;
             Console.WriteLine(a);
@@ -42,7 +42,7 @@ namespace CsharpTesting.AllProgramFiles.DataType
             Console.WriteLine(a);
         }
 
-        public void Boolean()
+        public static void Boolean()
         {
             bool b = true;
             if(b == true)

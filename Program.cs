@@ -41,10 +41,10 @@ public class Program
         /* AllSorting allSorting = new AllSorting();
         allSorting.InsertionSort([5,8,3,1,7,2,9,6,4]); */
 
-        DataType dataType = new DataType();
-        dataType.viewDataTypes();
-        dataType.viewDataTypeIncrement();
-        dataType.Boolean();
+        
+        DataType.viewDataTypes();
+        DataType.viewDataTypeIncrement();
+        DataType.Boolean();
         
     }
 }
