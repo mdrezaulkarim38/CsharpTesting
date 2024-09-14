@@ -34,7 +34,12 @@ namespace CsharpTesting.AllProgramFiles.DataType
 
         public void viewDataTypeIncrement()
         {
-            
+            sbyte a = 126;
+            Console.WriteLine(a);
+            a++;
+            Console.WriteLine(a);
+            a++;
+            Console.WriteLine(a);
         }
     }
 }
