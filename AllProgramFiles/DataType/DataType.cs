@@ -28,8 +28,8 @@ namespace CsharpTesting.AllProgramFiles.DataType
             Console.WriteLine("double : "+ d);
             Console.WriteLine("decimal : "+ dec);
             Console.WriteLine("Unsigned Integer: "+ ui);
-            Console.WriteLine("Unsinged short: "+ us);
-            Console.WriteLine("Unsinged long"+ ul);
+            Console.WriteLine("Unsigned short: "+ us);
+            Console.WriteLine("Unsigned long"+ ul);
         }
 
         public static void viewDataTypeIncrement()
