@@ -8,6 +8,10 @@ using CsharpTesting.AllProgramFiles;
 using CsharpTesting.AllProgramFiles.DataType;
 public class Program
 {
+    public static void AddStr(dynamic s1, dynamic s2)
+    {
+        Console.WriteLine(s1 + s2);
+    }
     public static void Main(string[] args)
     {
         /*
@@ -50,5 +54,17 @@ public class Program
 
         /* Variables.VariableView();
         Variables.VariableInput(); */
+
+        /**
+        * Dynamic variable 
+        
+        AddStr("Shuvo", "Farhana");
+        AddStr("Husband", "Wife");
+        AddStr("Hello ", 123);
+        AddStr(12, 30);*/
+
+        
+        
+
     }
 }
