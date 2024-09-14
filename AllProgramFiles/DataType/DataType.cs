@@ -63,5 +63,10 @@ namespace CsharpTesting.AllProgramFiles.DataType
 
             Console.WriteLine(obj.GetType());
         }
+        public static void IntegerPrint()
+        {
+            int a = 1223;
+            Console.WriteLine(a);
+        }
     }
 }
