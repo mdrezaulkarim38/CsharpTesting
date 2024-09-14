@@ -41,5 +41,14 @@ namespace CsharpTesting.AllProgramFiles.DataType
             a++;
             Console.WriteLine(a);
         }
+
+        public void Boolean()
+        {
+            bool b = true;
+            if(b == true)
+            {
+                Console.WriteLine("Hi Shuvo");
+            }
+        }
     }
 }
