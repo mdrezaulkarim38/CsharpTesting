@@ -44,6 +44,7 @@ public class Program
         DataType dataType = new DataType();
         dataType.viewDataTypes();
         dataType.viewDataTypeIncrement();
+        dataType.Boolean();
         
     }
 }
