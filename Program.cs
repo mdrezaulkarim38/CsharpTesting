@@ -48,6 +48,7 @@ public class Program
         DataType.Boolean();
         DataType.StringPrint(); */
 
-        Variables.VariableView();
+        //Variables.VariableView();
+        Variables.VariableInput();
     }
 }
