@@ -7,7 +7,7 @@ namespace CsharpTesting.AllProgramFiles.DataType
 {
     public class DataType
     {
-        public static void viewDataTypes()
+        public static void ViewDataTypes()
         {
             char a = 's';
             int i = 89;
@@ -32,7 +32,7 @@ namespace CsharpTesting.AllProgramFiles.DataType
             Console.WriteLine("Unsigned long"+ ul);
         }
 
-        public static void viewDataTypeIncrement()
+        public static void ViewDataTypeIncrement()
         {
             sbyte a = 126;
             Console.WriteLine(a);

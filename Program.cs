@@ -42,8 +42,8 @@ public class Program
         allSorting.InsertionSort([5,8,3,1,7,2,9,6,4]); */
 
         
-        DataType.viewDataTypes();
-        DataType.viewDataTypeIncrement();
+        DataType.ViewDataTypes();
+        DataType.ViewDataTypeIncrement();
         DataType.Boolean();
         
     }
