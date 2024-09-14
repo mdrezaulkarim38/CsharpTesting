@@ -4,6 +4,7 @@ using CsharpTesting.AllProgramFiles.MaxNumber;
 using CsharpTesting.AllProgramFiles.NumberTheory;
 using CsharpTesting.AllProgramFiles.Pyramid; */
 //using CsharpTesting.AllProgramFiles.Sorting;
+using CsharpTesting.AllProgramFiles;
 using CsharpTesting.AllProgramFiles.DataType;
 public class Program
 {
@@ -47,6 +48,6 @@ public class Program
         DataType.Boolean();
         DataType.StringPrint(); */
 
-        
+        Variables.VariableView();
     }
 }
