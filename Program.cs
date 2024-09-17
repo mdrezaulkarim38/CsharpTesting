@@ -8,10 +8,10 @@ using CsharpTesting.AllProgramFiles;
 //using CsharpTesting.AllProgramFiles.DataType;
 public class Program
 {
-    public static void AddStr(dynamic s1, dynamic s2)
+    /* public static void AddStr(dynamic s1, dynamic s2)
     {
         Console.WriteLine(s1 + s2);
-    }
+    } */
     public static void Main(string[] args)
     {
         /*
@@ -64,13 +64,26 @@ public class Program
         AddStr(12, 30);*/
 
 
-        Student student = new Student(1, "Shuvo");
+        /* Student student = new Student(1, "Shuvo");
         Console.WriteLine("Roll number: {0}", student.rollNo);
         Console.WriteLine("Name : {0}", student.name);
 
         Console.WriteLine();
         Console.WriteLine("Roll number: {0}", student.getRollNo());
         Console.WriteLine("Name: {0}", student.getName());
+
+        X obj1 = new X();
+        Y obj2 = new Y();
+        Console.WriteLine("Value of x is : {0}", obj2.getX()); */
+
+        int num = 2020;
+        object obj = num;
+        //num = 100;
+        int i = (int)obj;
+        //System.Console.WriteLine("Value - type value of num is : {0}", num);
+        System.Console.WriteLine("Object - type value of obj is : {0}", obj);
+        System.Console.WriteLine("Object - type value of i is : {0}", i);
+        
 
     }
 }

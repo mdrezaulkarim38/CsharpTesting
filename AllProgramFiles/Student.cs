@@ -5,6 +5,20 @@ using System.Threading.Tasks;
 
 namespace CsharpTesting.AllProgramFiles
 {
+    class X {
+        protected int x;
+        public X()
+        {
+            x = 10;
+        }
+    }
+    class Y : X 
+    {
+        public int getX()
+        {
+            return x;
+        }
+    }
     public class Student
     {
         public int rollNo;
