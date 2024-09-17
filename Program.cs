@@ -5,7 +5,7 @@ using CsharpTesting.AllProgramFiles.NumberTheory;
 using CsharpTesting.AllProgramFiles.Pyramid; */
 //using CsharpTesting.AllProgramFiles.Sorting;
 using CsharpTesting.AllProgramFiles;
-using CsharpTesting.AllProgramFiles.DataType;
+//using CsharpTesting.AllProgramFiles.DataType;
 public class Program
 {
     public static void AddStr(dynamic s1, dynamic s2)
@@ -63,8 +63,14 @@ public class Program
         AddStr("Hello ", 123);
         AddStr(12, 30);*/
 
-        
-        
+
+        Student student = new Student(1, "Shuvo");
+        Console.WriteLine("Roll number: {0}", student.rollNo);
+        Console.WriteLine("Name : {0}", student.name);
+
+        Console.WriteLine();
+        Console.WriteLine("Roll number: {0}", student.getRollNo());
+        Console.WriteLine("Name: {0}", student.getName());
 
     }
 }
