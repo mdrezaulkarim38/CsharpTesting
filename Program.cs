@@ -5,6 +5,7 @@ using CsharpTesting.AllProgramFiles.NumberTheory;
 using CsharpTesting.AllProgramFiles.Pyramid; */
 //using CsharpTesting.AllProgramFiles.Sorting;
 using CsharpTesting.AllProgramFiles;
+using CsharpTesting.AllProgramFiles.Pattern;
 //using CsharpTesting.AllProgramFiles.DataType;
 
 /* class Geeks1 { }
@@ -128,7 +129,8 @@ public class Program
             }
         } */
 
-
+        RPattern rPattern= new RPattern();
+        rPattern.PatternPrint(5);
 
     }
 }

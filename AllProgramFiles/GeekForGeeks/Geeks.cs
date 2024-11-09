@@ -1,7 +1,7 @@
 namespace CsharpTesting.AllProgramFiles.GeekforGeeks;
 class Geeks
 {
-    public string Name;
+    public required string Name;
     public string GetName()
     {
         return Name;
