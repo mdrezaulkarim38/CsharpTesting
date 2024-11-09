@@ -1,4 +1,4 @@
-namespace CsharpTesting.AllProgramFiles.GeekforGeeks;
+namespace CsharpTesting.AllProgramFiles.GeekForGeeks;
 class Geeks
 {
     public required string Name;
