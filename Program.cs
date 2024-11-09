@@ -4,6 +4,7 @@ using CsharpTesting.AllProgramFiles.MaxNumber;
 using CsharpTesting.AllProgramFiles.NumberTheory;
 using CsharpTesting.AllProgramFiles.Pyramid; */
 //using CsharpTesting.AllProgramFiles.Sorting;
+using _.AllProgramFiles.Pattern;
 using CsharpTesting.AllProgramFiles;
 using CsharpTesting.AllProgramFiles.Pattern;
 //using CsharpTesting.AllProgramFiles.DataType;
@@ -132,5 +133,9 @@ public class Program
         RPattern rPattern= new RPattern();
         rPattern.PatternPrint(5);
 
+        TPattern tPattern = new TPattern();
+        tPattern.PatternPrint(5);
+        tPattern.PatternPrintNumber(5);
+        tPattern.PatternPrintINumber(5);
     }
 }
