@@ -4,6 +4,7 @@ using CsharpTesting.AllProgramFiles.MaxNumber;
 using CsharpTesting.AllProgramFiles.NumberTheory;
 using CsharpTesting.AllProgramFiles.Pyramid; */
 //using CsharpTesting.AllProgramFiles.Sorting;
+using _.AllProgramFiles.LinqTutorial;
 using _.AllProgramFiles.Pattern;
 using CsharpTesting.AllProgramFiles;
 using CsharpTesting.AllProgramFiles.GeekForGeeks;
@@ -139,8 +140,11 @@ public class Program
         tPattern.PatternPrintNumber(5);
         tPattern.PatternPrintINumber(5); */
 
-        CountDigits countDigits = new CountDigits();
+        /* CountDigits countDigits = new CountDigits();
         int number = countDigits.CountNumber(1253);
-        Console.WriteLine(number);
+        Console.WriteLine(number); */
+
+        PracticeLinq practiceLinq = new PracticeLinq();
+        practiceLinq.DisplayData();
     }
 }

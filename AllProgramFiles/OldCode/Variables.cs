@@ -2,7 +2,7 @@ namespace CsharpTesting.AllProgramFiles
 {
     public class Variables
     {
-        readonly int y;
+        readonly int y = 0;
         public static void VariableView()
         {
             int x = 32;
