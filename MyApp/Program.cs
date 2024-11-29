@@ -6,7 +6,7 @@ public class Program
         Car car = new Car();
         car.Break();
         car.SlowDown();
-    }    
+    }
 }
 
 public class Car
@@ -20,5 +20,4 @@ public class Car
     public void SlowDown(){
         Console.WriteLine("Name & Weight "+ Name + ""+ Weight);
     }
-    
 }
