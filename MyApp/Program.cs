@@ -1,2 +1,24 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿namespace MyApp;
+public class Program
+{
+    public static void Main(string[] args)
+    {
+        Car car = new Car();
+        car.Break();
+        car.SlowDown();
+    }    
+}
+
+public class Car
+{
+    string Name = "Shuvo";
+    int Speed = 23;
+    int Weight = 44;
+    public void Break(){
+        Console.WriteLine("Break "+ Speed);
+    }
+    public void SlowDown(){
+        Console.WriteLine("Name & Weight "+ Name + ""+ Weight);
+    }
+    
+}
