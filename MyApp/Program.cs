@@ -6,6 +6,7 @@ public class Program
         Car car = new Car();
         car.Break();
         car.SlowDown();
+        Console.WriteLine("Testing the code");
     }
 }
 
