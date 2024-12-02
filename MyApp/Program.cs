@@ -3,7 +3,10 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Welcome To C#.Net");
-        Console.WriteLine("This is testing Auto Save");
+        string name = "Rezaul Karim";
+        Console.WriteLine(name);
+        Console.WriteLine("Hello " + name);
+        Console.WriteLine($"Hello {name}");
+        Console.ReadKey();
     }
 }
