@@ -12,13 +12,13 @@ public class Program
 
 public class Car
 {
-    string Name = "Shuvo";
-    int Speed = 23;
-    int Weight = 44;
+    public string _Name = "Shuvo";
+    private int _Speed = 23;
+    int _Weight = 44;
     public void Break(){
-        Console.WriteLine("Break "+ Speed);
+        Console.WriteLine("Break "+ _Speed);
     }
     public void SlowDown(){
-        Console.WriteLine("Name & Weight "+ Name + ""+ Weight);
+        Console.WriteLine("Name & Weight "+ _Name + ""+ _Weight);
     }
 }
