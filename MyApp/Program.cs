@@ -3,10 +3,9 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Enter two Numbers: ");
-        int number1 = Convert.ToInt32(Console.ReadLine());
-        int number2 = Convert.ToInt32(Console.ReadLine());
-        int result = number1 + number2;
-        Console.WriteLine($"The Sum is: {result}");
+        string str1 = "Dot Net Tutorials";
+        string str2 = @"Dot Net Tutorials";
+        Console.WriteLine($"str1: {str1}");
+        Console.WriteLine($"str2: {str2}");
     }
 }
