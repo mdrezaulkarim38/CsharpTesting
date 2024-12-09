@@ -3,10 +3,10 @@ class Program
 {
     static void Main(string[] args)
     {
-        string name = "Rezaul Karim";
-        Console.WriteLine(name);
-        Console.WriteLine("Hello " + name);
-        Console.WriteLine($"Hello {name}");
-        Console.ReadKey();
+        Console.WriteLine("Enter two Numbers: ");
+        int number1 = Convert.ToInt32(Console.ReadLine());
+        int number2 = Convert.ToInt32(Console.ReadLine());
+        int result = number1 + number2;
+        Console.WriteLine($"The Sum is: {result}");
     }
 }
