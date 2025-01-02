@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using api.Data;
 
@@ -11,9 +12,11 @@ using api.Data;
 namespace api.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250102071436_InitialCreate")]
+    partial class InitialCreate
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -51,13 +54,13 @@ namespace api.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "7ad06ee9-078f-4867-ab18-4f7f2ac70fa4",
+                            Id = "93c89ed4-97a8-45b0-ad04-814585dad7fd",
                             Name = "Admin",
                             NormalizedName = "ADMIN"
                         },
                         new
                         {
-                            Id = "e6746fde-9430-431e-9378-2b66754ff02e",
+                            Id = "584687b9-58c6-4365-bc8a-9cd18d48aa0a",
                             Name = "User",
                             NormalizedName = "USER"
                         });
@@ -259,24 +262,6 @@ namespace api.Migrations
                     b.HasIndex("StockId");
 
                     b.ToTable("Comments");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            Content = "Apple reported excellent Q3 earnings with a growth in services revenue.",
-                            CreatedOn = new DateTime(2024, 12, 23, 13, 17, 20, 19, DateTimeKind.Local).AddTicks(712),
-                            StockId = 1,
-                            Title = "Strong Q3 Performance"
-                        },
-                        new
-                        {
-                            Id = 2,
-                            Content = "Tesla unveiled exciting updates to the Model S lineup, boosting investor confidence.",
-                            CreatedOn = new DateTime(2024, 12, 28, 13, 17, 20, 19, DateTimeKind.Local).AddTicks(1039),
-                            StockId = 2,
-                            Title = "Exciting Model S Updates"
-                        });
                 });
 
             modelBuilder.Entity("api.Models.Stock", b =>
@@ -308,28 +293,6 @@ namespace api.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Stocks");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            CompanyName = "Apple Inc.",
-                            Industry = "Technology",
-                            LastDiv = 0.22m,
-                            MarketCap = 2300000000000L,
-                            Purchase = 145.32m,
-                            Symbol = "AAPL"
-                        },
-                        new
-                        {
-                            Id = 2,
-                            CompanyName = "Tesla Inc.",
-                            Industry = "Automotive",
-                            LastDiv = 0.00m,
-                            MarketCap = 900000000000L,
-                            Purchase = 255.78m,
-                            Symbol = "TSLA"
-                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
