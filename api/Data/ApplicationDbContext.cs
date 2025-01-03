@@ -14,6 +14,7 @@ public class ApplicationDbContext : IdentityDbContext<AppUser>
 
     public DbSet<Stock> Stocks { get; set; }
     public DbSet<Comment> Comments { get; set; }
+    public DbSet<Portfolio> Portfolios { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
@@ -27,12 +28,15 @@ public class ApplicationDbContext : IdentityDbContext<AppUser>
     protected override void OnModelCreating(ModelBuilder builder)
     {
         base.OnModelCreating(builder);
-
+        builder.Entity<Portfolio>(x=> x.HasKey(p => new { p.AppUserId, p.StockId}));
         // Seed roles
         builder.Entity<IdentityRole>().HasData(
             new IdentityRole { Id = Guid.NewGuid().ToString(), Name = "Admin", NormalizedName = "ADMIN" },
             new IdentityRole { Id = Guid.NewGuid().ToString(), Name = "User", NormalizedName = "USER" }
         );
+
+        builder.Entity<Portfolio>().HasOne(u=> u.AppUser).WithMany(u => u.Portfolios).HasForeignKey(p => p.AppUserId);
+        builder.Entity<Portfolio>().HasOne(u=> u.Stock).WithMany(u => u.Portfolios).HasForeignKey(p => p.StockId);
 
         // Seed Stocks
         builder.Entity<Stock>().HasData(
