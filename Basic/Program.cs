@@ -29,5 +29,9 @@ public class Program
         {
             Console.WriteLine(ex);
         }
+        finally
+        {
+            Console.WriteLine("Clean up code");
+        }
     }
 }
