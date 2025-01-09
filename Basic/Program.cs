@@ -39,7 +39,7 @@ public class Program
        Console.WriteLine("The addition is: "+add);
        Console.WriteLine("The subtraction is: "+sub);
     }
-    static void MyMaths(int num1, int num2, out int add, out int sub) // If you want to return mulitple outputs from a function you can use OUT Keyword
+    static void MyMaths(int num1, int num2, out int add, out int sub) // If you want to return multipule outputs from a function you can use OUT Keyword
     {
         add = num1 + num2;
         sub = num1 - num2;
