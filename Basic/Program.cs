@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections;
+using System.Collections.Generic;
 namespace Basic;
 
 public class Program
@@ -18,6 +20,14 @@ public class Program
         List<int> geneint = new List<int>();
         geneint.Add(1);
         geneint.Add(2);
-
+        try
+        {
+            int y = 0;
+            int x = 1 / y;
+        }
+        catch(Exception ex)
+        {
+            Console.WriteLine(ex);
+        }
     }
 }
