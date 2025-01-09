@@ -5,9 +5,19 @@ public class Program
 {
     static void Main(string[] args)
     {
-        int  i = 10;
-        double d2 = i; // casting (implicit casting)
-        double d1 = 3;
-        int y = (int) d1; // explicit casting 
+        //        int  i = 10;
+        //        double d2 = i; // casting (implicit casting)
+        //        double d1 = 3;
+        //        int y = (int) d1; // explicit casting
+        int[] marray = {1, 2, 3}; // array (fixed, strongly typed)
+        ArrayList mylist = new ArrayList();// arraylist (flexible)
+        mylist.Add(1);
+        mylist.Add(3);
+
+        // strongly type, size is flexible
+        List<int> geneint = new List<int>();
+        geneint.Add(1);
+        geneint.Add(2);
+
     }
 }
