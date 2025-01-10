@@ -25,17 +25,29 @@ public class Dog : Animal
     }
 }
 
+public class SomeClass
+{
+    private int someValue;
+
+    public SomeClass(int val)
+    {
+        someValue = val;
+    }
+    public static SomeClass operator +(SomeClass arg1, SomeClass arg2)
+    {
+        return new SomeClass(arg1.someValue + arg2.someValue);
+    }
+}
+
 public class Program
 {
     static void Main(string[] args)
     {
-        Animal myAnimal = new Animal();
-        Animal pig = new Pig();
-        Animal myDog = new Dog();
-        
-        myAnimal.AnimalSound();
-        myDog.AnimalSound();
-        pig.AnimalSound();
+        var x = 1 + 2;
+        var o1 = new SomeClass(10);
+        var o2 = new SomeClass(20);
+        var o3 = o1 + o2;
+        Console.WriteLine(o3);
         Console.WriteLine("Hello World!");
     }
 }
