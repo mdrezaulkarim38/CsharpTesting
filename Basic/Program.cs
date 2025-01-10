@@ -13,10 +13,11 @@ public class Program
     {
         public string? Name { get; set;  }
         public string? Address { get; set; }
+        public Doctor? DoctorWhileTreat { get; set; }
     }
 
     class Doctor
     {
-        
+        public string? Name { get; set; }
     }
 }
