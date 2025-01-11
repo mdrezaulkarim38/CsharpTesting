@@ -41,13 +41,30 @@ public class SomeClass
 
 public class Program
 {
+    static int LongestSubstring(string s)
+    {
+        int n = s.Length;
+        int maxLength = 0;
+        int start = 0;
+        HashSet<char> seenChar = new HashSet<char>();
+        for (int end = 0; end < n; end++)
+        {
+            while (seenChar.Contains(s[end]))
+            {
+                seenChar.Remove(s[start]);
+                start++;
+            }
+
+            seenChar.Add(s[end]);
+            maxLength = Math.Max(maxLength, end - start + 1);
+        }
+
+        return maxLength;
+    }
     static void Main(string[] args)
     {
-        var x = 1 + 2;
-        var o1 = new SomeClass(10);
-        var o2 = new SomeClass(20);
-        var o3 = o1 + o2;
-        Console.WriteLine(o3);
-        Console.WriteLine("Hello World!");
+        Console.WriteLine(LongestSubstring("geeksforgeeks")); // Output: 7
+        Console.WriteLine(LongestSubstring("aaa")); // Output: 1
+        Console.WriteLine(LongestSubstring("abcdefabcbb"));
     }
 }
