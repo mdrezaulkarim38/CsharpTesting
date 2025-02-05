@@ -23,7 +23,7 @@ public class Dog : Animal
     {
         Console.WriteLine("The dog makes a sound: bow wow");
     }
-}
+} 
 
 public class SomeClass
 {
