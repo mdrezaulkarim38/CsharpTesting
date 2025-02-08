@@ -75,6 +75,24 @@ public class Program
         }
         return true;
     }
+
+
+    static float SumOfGP(float a, float r, float n)
+    {
+        /* float sum = 0;
+        for(int i = 0; i < n; i++)
+        {
+            sum = sum + a;
+            a = a * r;
+        }
+        
+        return sum;  */
+        return (a * (1 - (int)(Math.Pow(r, n)))) / (1 - r);
+    }
+
+    public static float SimpleInterest(float p, float t, float r) {
+        return (p * t * r) / 100;
+    }
     public static void Main(string[] args){
         // int n = 101;
         // if (IsEven(n) == true)
