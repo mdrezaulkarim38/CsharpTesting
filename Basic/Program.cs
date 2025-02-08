@@ -62,17 +62,14 @@ public class Program
 
     static bool CheckIsAP(int[] arr, int n)
     {
-        if(n == 1)
-        {
-            return true;
+        if(n == 1) {
+            return true; // is the the Length of array
         }
         Array.Sort(arr);
-
-        int d = arr[1] - arr[0];
+        int difference = arr[1] - arr[0];
         for(int i = 2; i < n; i++)
         {
-            if(arr[i] - arr[i - 1] != d)
-            {
+            if(arr[i] - arr[i - 1] != difference) {
                 return false;
             }
         }
