@@ -110,10 +110,9 @@ public class Program
         // (a, b) = (b, a);
         // Console.WriteLine(a +" "+b);
 
-
-        int n = 13, m = 4;
-        Console.WriteLine(ClosestNumber(n, m));
-
+        Problems p = new Problems();
+        Console.WriteLine("Answer of the 687 = "+ p.SumOfDigitsOfANumber(687));
+        Console.WriteLine("Answer of the 12 = "+ p.SumOfDigitsOfANumber(12));      
             
     }
 }
