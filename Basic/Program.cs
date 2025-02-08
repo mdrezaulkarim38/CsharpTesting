@@ -55,7 +55,29 @@ public class Program
         return closest;
     }
 
+    static int OppositeFaceOfDice(int n){
+        int ans = 7 - n;
+        return ans;
+    }
 
+    static bool CheckIsAP(int[] arr, int n)
+    {
+        if(n == 1)
+        {
+            return true;
+        }
+        Array.Sort(arr);
+
+        int d = arr[1] - arr[0];
+        for(int i = 2; i < n; i++)
+        {
+            if(arr[i] - arr[i - 1] != d)
+            {
+                return false;
+            }
+        }
+        return true;
+    }
     public static void Main(string[] args){
         // int n = 101;
         // if (IsEven(n) == true)
