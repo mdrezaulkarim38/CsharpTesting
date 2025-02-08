@@ -93,6 +93,12 @@ public class Program
     public static float SimpleInterest(float p, float t, float r) {
         return (p * t * r) / 100;
     }
+
+    static float FindArea(float r)
+    {
+        return (float)(Math.PI * r * r);
+    }
+
     public static void Main(string[] args){
         // int n = 101;
         // if (IsEven(n) == true)
