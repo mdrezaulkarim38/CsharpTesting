@@ -3,13 +3,25 @@
 
 public class Program
 {
-    public  static void Main(string[] args)
-    {
-        int a = Convert.ToInt32(Console.ReadLine());
-        int b = Convert.ToInt32(Console.ReadLine());
+    public static bool IsEven(int n){
+        return (n % 2 == 0);
+    }
 
-        (a, b) = (b , a);
-        Console.WriteLine(a);
-        Console.WriteLine(b);
+    static void PrintTable(int n, int i = 1){
+        if(i == 11) {
+            return ;
+        }
+        Console.WriteLine($" {n} * {i} = {n * i}");
+        i++;
+        PrintTable(n, i);
+    }
+
+    
+    public static void Main(string[] args){
+        int n = 101;
+        if (IsEven(n) == true)
+            Console.WriteLine("true");
+        else
+            Console.WriteLine("false");
     }
 }
