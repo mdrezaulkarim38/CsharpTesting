@@ -16,7 +16,7 @@ public class Program
         PrintTable(n, i);
     }
 
-    static int findSum(int n)
+    static int FindSum1(int n)
     {
         int sum = 0;
         for(int i = 1; i <= n; i++)
@@ -26,11 +26,25 @@ public class Program
 
         return sum;
     }
+
+    static int FindSum2(int n)
+    {
+        if(n % 2 == 0){
+            return (n / 2) * (n + 1);
+        }
+        else{
+            return ((n + 1) /2) * n;
+        }
+    }
+
     public static void Main(string[] args){
         int n = 101;
         if (IsEven(n) == true)
             Console.WriteLine("true");
         else
             Console.WriteLine("false");
+
+
+            
     }
 }
