@@ -112,7 +112,12 @@ public class Program
 
         Problems p = new Problems();
         Console.WriteLine("Answer of the 687 = "+ p.SumOfDigitsOfANumber(687));
-        Console.WriteLine("Answer of the 12 = "+ p.SumOfDigitsOfANumber(12));      
+        Console.WriteLine("Answer of the 12 = "+ p.SumOfDigitsOfANumber(12));  
+
+        Console.WriteLine("n = 10 is prime = "+ p.IsPrime(10));    
+        Console.WriteLine("n = 11 is prime = "+ p.IsPrime(11));
+        Console.WriteLine("n = 1 is prime = "+ p.IsPrime(1));
+        Console.WriteLine("n = 0 is prime = "+ p.IsPrime(0));
             
     }
 }
