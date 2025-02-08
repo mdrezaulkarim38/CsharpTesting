@@ -1,3 +1,5 @@
+using System.IO.Pipelines;
+
 namespace Basic;
 
 public class Problems{
@@ -39,5 +41,21 @@ public class Problems{
             }
         }
         return true;
+    }
+
+    public bool IsPower(int x, int y)
+    {
+        /* if(x == 1) return (y == 1);
+
+        int pow = 1;
+        while (pow < y)
+        {
+            pow = pow * x;
+        }
+        return (pow == y); */
+
+        double res1 = Math.Log(y) / Math.Log(x);
+        double res2 = Math.Log(y) / Math.Log(x);
+        return (res1 == res2);
     }
 }
