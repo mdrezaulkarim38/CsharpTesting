@@ -37,16 +37,40 @@ public class Program
         }
     }
 
-    public static void Main(string[] args){
-        int n = 101;
-        if (IsEven(n) == true)
-            Console.WriteLine("true");
-        else
-            Console.WriteLine("false");
+    static int ClosestNumber(int n, int m)
+    {
+        int closest = 0;
+        int minDifference = int.MaxValue;
+        for(int i = n - Math.Abs(m); i <= n + Math.Abs(m); ++i)
+        {
+            if(i % m == 0)
+            {
+                int difference = Math.Abs(n - i);
+                if(difference < minDifference || (difference == minDifference && Math.Abs(i) > Math.Abs(closest))){
+                    closest = i;
+                    minDifference = difference;
+                }
+            }
+        }
+        return closest;
+    }
 
-        int a = 2, b = 3;
-        (a, b) = (b, a);
-        Console.WriteLine(a +" "+b);
+
+    public static void Main(string[] args){
+        // int n = 101;
+        // if (IsEven(n) == true)
+        //     Console.WriteLine("true");
+        // else
+        //     Console.WriteLine("false");
+
+        // int a = 2, b = 3;
+        // (a, b) = (b, a);
+        // Console.WriteLine(a +" "+b);
+
+
+        int n = 13, m = 4;
+        Console.WriteLine(ClosestNumber(n, m));
+
             
     }
 }
