@@ -44,7 +44,9 @@ public class Program
         else
             Console.WriteLine("false");
 
-
+        int a = 2, b = 3;
+        (a, b) = (b, a);
+        Console.WriteLine(a +" "+b);
             
     }
 }
