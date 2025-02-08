@@ -58,4 +58,17 @@ public class Problems{
         double res2 = Math.Log(y) / Math.Log(x);
         return (res1 == res2);
     }
+
+    public double Distance(double x1, double y1, double x2, double y2)
+    {
+        return Math.Sqrt(Math.Pow((x2 - x1), 2) + Math.Pow((y2 - y1), 2));
+    }
+
+    public bool IsValidTriangle(int a, int b, int c)
+    {
+        if( (a + b) <= c || (a + c) <= b || (b + c) <= a) {
+            return false;
+        }
+        return true;
+    }
 }
