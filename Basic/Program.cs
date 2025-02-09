@@ -111,13 +111,16 @@ public class Program
         // Console.WriteLine(a +" "+b);
 
         Problems p = new Problems();
-        Console.WriteLine("Answer of the 687 = "+ p.SumOfDigitsOfANumber(687));
+        /* Console.WriteLine("Answer of the 687 = "+ p.SumOfDigitsOfANumber(687));
         Console.WriteLine("Answer of the 12 = "+ p.SumOfDigitsOfANumber(12));  
 
         Console.WriteLine("n = 10 is prime = "+ p.IsPrime(10));    
         Console.WriteLine("n = 11 is prime = "+ p.IsPrime(11));
         Console.WriteLine("n = 1 is prime = "+ p.IsPrime(1));
-        Console.WriteLine("n = 0 is prime = "+ p.IsPrime(0));
+        Console.WriteLine("n = 0 is prime = "+ p.IsPrime(0)); */
+
+        int  a = 15, b = 20;
+        Console.WriteLine("LCM of "+ a +" and "+ b +" is "+ p.LCM(a, b));
             
     }
 }

@@ -128,6 +128,9 @@ public class Problems{
         return GCD(b, a % b);
     }
 
-
+    public int LCM(int a, int b)
+    {
+        return (a / GCD(a, b)) * b;
+    }
 
 }
