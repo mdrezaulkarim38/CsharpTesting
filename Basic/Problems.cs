@@ -88,4 +88,21 @@ public class Problems{
         }
         return res - 1;
     }
+
+    public int GCD(int a, int b)
+    {
+        int result  = Math.Min(a,b);
+        while(result != 0)
+        {
+            if(a % result == 0 && b % result == 0)
+            {
+                break;
+            }
+            result--;
+        }
+        return result;
+    }
+
+
+    
 }
