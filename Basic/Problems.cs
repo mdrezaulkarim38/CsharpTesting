@@ -78,4 +78,14 @@ public class Problems{
 
         return n * Factorial(n - 1);
     }
+
+    public int FloorSqrt(int n)
+    {
+        int res = 1;
+        while(res * res <= n)
+        {
+            res++;
+        }
+        return res - 1;
+    }
 }
