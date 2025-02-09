@@ -91,7 +91,7 @@ public class Problems{
 
     public int GCD(int a, int b)
     {
-        int result  = Math.Min(a,b);
+       /*  int result  = Math.Min(a,b);
         while(result != 0)
         {
             if(a % result == 0 && b % result == 0)
@@ -100,9 +100,16 @@ public class Problems{
             }
             result--;
         }
-        return result;
+        return result; */
+        if(a == 0) return b;
+        if(b == 0) return a;
+        if(a == b) return a;
+
+        if(a > b) return GCD(a - b, b);
+
+        return GCD(a, b - a);
     }
 
 
-    
+
 }
