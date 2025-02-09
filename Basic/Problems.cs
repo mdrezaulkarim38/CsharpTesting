@@ -101,13 +101,31 @@ public class Problems{
             result--;
         }
         return result; */
-        if(a == 0) return b;
+        /* if(a == 0) return b;
         if(b == 0) return a;
         if(a == b) return a;
 
         if(a > b) return GCD(a - b, b);
 
-        return GCD(a, b - a);
+        return GCD(a, b - a); */
+
+        /* if(a == 0) return b;
+        if(b == 0) return a;
+        if(a == b) return a;
+
+        if(a > b)
+        {
+            if(a%b == 0) return b;
+
+            return GCD(a-b, b);    
+        }
+        if(b % a == 0) return a;
+
+        return GCD(a, b - a); */
+
+        if(b == 0) return a;
+
+        return GCD(b, a % b);
     }
 
 
