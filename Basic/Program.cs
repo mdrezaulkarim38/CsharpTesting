@@ -1,15 +1,39 @@
 ﻿using System;
 
-public class Program
+class Program
 {
-    public static void Main()
+    static int MinimizeStringLength(string s)
+    {
+        int n = s.Length;
+        bool changed;
+        do
+        {
+            changed = false;
+            for (int i = 0; i < n - 1;)
+            {
+                if (s[i] == s[i + 1])
+                {
+                    s = s.Remove(i, 1).Insert(i, "a");
+                    s = s.Remove(i + 1, 1);
+                    changed = true;
+                    if (i > 0) i--; 
+                }
+                else
+                {
+                    i++;
+                }
+            }
+        } while (changed);
+        return s.Length;
+    }
+
+    static void Main(string[] args)
     {
         int t = int.Parse(Console.ReadLine());
-        for (int i = 0; i < t; i++)
+        while (t-- > 0)
         {
-            string w = Console.ReadLine().Trim();
-            string plural = w.Substring(0, w.Length - 2) + "i";
-            Console.WriteLine(plural);
+            string s = Console.ReadLine();
+            Console.WriteLine(MinimizeStringLength(s));
         }
     }
 }
