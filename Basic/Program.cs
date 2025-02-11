@@ -1,39 +1,26 @@
 ﻿using System;
 
-class Program
+public class Program
 {
-    static int MinimizeStringLength(string s)
+    public static void Main()
     {
-        int n = s.Length;
-        bool changed;
-        do
-        {
-            changed = false;
-            for (int i = 0; i < n - 1;)
-            {
-                if (s[i] == s[i + 1])
-                {
-                    s = s.Remove(i, 1).Insert(i, "a");
-                    s = s.Remove(i + 1, 1);
-                    changed = true;
-                    if (i > 0) i--; 
-                }
-                else
-                {
-                    i++;
-                }
-            }
-        } while (changed);
-        return s.Length;
-    }
-
-    static void Main(string[] args)
-    {
-        int t = int.Parse(Console.ReadLine());
+        int t = int.Parse(Console.ReadLine()!);
+        
         while (t-- > 0)
         {
-            string s = Console.ReadLine();
-            Console.WriteLine(MinimizeStringLength(s));
+            string[] input = Console.ReadLine()!.Split();
+            int x = int.Parse(input[0]);
+            int y = int.Parse(input[1]);
+            
+            // Check if y is either x + 1 or if y is less than x + 1 and the difference is a multiple of 9
+            if (y == x + 1 || (y < x + 1 && (x + 1 - y) % 9 == 0))
+            {
+                Console.WriteLine("YES");
+            }
+            else
+            {
+                Console.WriteLine("NO");
+            }
         }
     }
 }
