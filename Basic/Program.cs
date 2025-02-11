@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 
 public class Program
 {
@@ -8,19 +10,47 @@ public class Program
         
         while (t-- > 0)
         {
-            string[] input = Console.ReadLine()!.Split();
-            int x = int.Parse(input[0]);
-            int y = int.Parse(input[1]);
+            int n = int.Parse(Console.ReadLine()!);
+            string[] input = Console.ReadLine()!.Trim().Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+            int[] a = input.Select(int.Parse).ToArray();
             
-            // Check if y is either x + 1 or if y is less than x + 1 and the difference is a multiple of 9
-            if (y == x + 1 || (y < x + 1 && (x + 1 - y) % 9 == 0))
+            Dictionary<int, int> freq = new Dictionary<int, int>();
+            foreach (int num in a)
             {
-                Console.WriteLine("YES");
+                if (freq.ContainsKey(num))
+                    freq[num]++;
+                else
+                    freq[num] = 1;
             }
-            else
+            
+            bool possible = true;
+            var sortedKeys = freq.Keys.OrderBy(x => x).ToList();
+            foreach (int x in sortedKeys)
             {
-                Console.WriteLine("NO");
+                int countX = freq[x];
+                if (countX == 0)
+                    continue;
+                    
+                if (freq.TryGetValue(x + 1, out int countXPlus1))
+                {
+                    if (countX > countXPlus1)
+                    {
+                        possible = false;
+                        break;
+                    }
+                    freq[x + 1] -= countX;
+                }
+                else
+                {
+                    if (countX % 2 != 0)
+                    {
+                        possible = false;
+                        break;
+                    }
+                }
             }
+            
+            Console.WriteLine(possible ? "YES" : "NO");
         }
     }
 }

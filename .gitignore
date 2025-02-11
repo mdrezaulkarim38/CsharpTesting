@@ -408,7 +408,8 @@ FodyWeavers.xsd
 ##
 ## Visual studio for Mac
 ##
-
+.cphcsrun
+.cph
 
 # globs
 Makefile.in
