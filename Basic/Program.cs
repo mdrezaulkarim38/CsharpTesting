@@ -1,15 +1,16 @@
 ﻿namespace Basic;
 public class Program
 {
-    public static void Main(string[] args)
+    static void Main(string[] args)
     {
-        int a = 15;
-        UpdateValue(a);
-        Console.WriteLine(a);
-    }
-    private static void UpdateValue(int b)
-    {
-        b = 30;
+        Employee em = new Employee();
+        em.EmployeeID = 1001;
+        em.Name = "John";
+
+        Employee em2 = new Employee();
+        em2.Name = "Smith";
+        Console.WriteLine($"Emp1 Name = {em.Name}");
+        Console.WriteLine($"Emp2 name = {em2.Name}");
     }
 }
 
