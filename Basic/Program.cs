@@ -3,19 +3,19 @@ public class Program
 {
     static void Main(string[] args)
     {
-        Employee em = new Employee();
-        em.EmployeeID = 1001;
-        em.Name = "John";
-
-        Employee em2 = new Employee();
-        em2.Name = "Smith";
-        Console.WriteLine($"Emp1 Name = {em.Name}");
-        Console.WriteLine($"Emp2 name = {em2.Name}");
+        int x = 5;
+        Console.WriteLine($"The factorial of {x} is {factorial(x)}");
     }
-}
 
-public class Employee
-{
-    public int EmployeeID;
-    public string Name;
+    static int factorial(int number)
+    {
+        if(number == 1)
+        {
+            return (1);
+        }
+        else
+        {
+            return (number * factorial(number - 1));
+        }
+    }
 }
