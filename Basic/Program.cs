@@ -1,10 +1,14 @@
-﻿using System;
-using System.Collections;
-namespace Basic;
-
-public class Program {
-    static void Main() {
-        var arrayOfInts = Enumerable.Range(69,420).ToArray();
-        var arrayList = new ArrayList(arrayOfInts);
-    }   
+﻿namespace Basic;
+public class Program
+{
+    public static void Main(string[] args)
+    {
+        List<string> nameList = new List<string>();
+        nameList.Add("shuvo");
+        nameList.Add("Superman");
+        foreach(string name in nameList)
+        {
+            Console.WriteLine(name);
+        }
+    }
 }
