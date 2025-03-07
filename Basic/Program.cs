@@ -3,22 +3,18 @@ public class Program
 {
     public static void Main(string[] args)
     {
-        int x, y;
-        x = 10;
-        y = 20;
-        int sum = Add(x, y);
-        int total = Add(x, y, sum);
-        Console.WriteLine(sum);
-        Console.WriteLine(total);
+        int a = 15;
+        UpdateValue(a);
+        Console.WriteLine(a);
     }
+    private static void UpdateValue(int b)
+    {
+        b = 30;
+    }
+}
 
-    static int Add(int a, int b)
-    {
-        int sum = a + b;
-        return sum;
-    }
-    static int Add(int x, int y, int z)
-    {
-        return x + y + z;
-    }
+public class Employee
+{
+    public int EmployeeID;
+    public string Name;
 }
