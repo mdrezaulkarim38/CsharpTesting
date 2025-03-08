@@ -5,7 +5,7 @@ public class Program
     {
         string str;
         Console.WriteLine("Enter a string - ");
-        str = Console.ReadLine();
+        str = Console.ReadLine()!;
         Console.WriteLine($"You Enter {str}");
     }
 }
