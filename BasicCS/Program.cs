@@ -1,40 +1,29 @@
 ﻿using System;
-using System.Collections.Generic;
-
 namespace BasicCS;
 
+public delegate void SampleDelegate();
 public class Program
 {
-    static List<int> findTwoElements(int[] arr)
+    static void Main(string[] args)
     {
-        int n = arr.Length;
-        int[] freq = new int[n + 1];
-        int repeting = -1;
-        int missing = -1;
-        for (int i = 0; i < n; i++)
-        {
-            freq[arr[i]]++;
-        }
-
-        for (int i = 0; i <= n; i++)
-        {
-            if (freq[i] == 0)
-            {
-                missing = i;
-            }
-            else if (freq[i] == 2)
-            {
-                repeting = i;
-            }
-        }
-        
-        return new List<int> { repeting, missing };
+        SampleDelegate sm = new SampleDelegate(SampleMethodOne);
+        SampleDelegate sm1 = new SampleDelegate(SampleMethodTwo);
+        SampleDelegate sm2 = new SampleDelegate(SampleMethodThree);
+        SampleDelegate del3 = sm + sm1 + sm2 - sm1;
+        del3();
+        Console.WriteLine("Hello To World");
+    }
+    public static void SampleMethodOne()
+    {
+        Console.WriteLine("SampleMethod one Invoked");
+    }
+    public static void SampleMethodTwo()
+    {
+        Console.WriteLine("SampleMethod Two Invoked");
     }
 
-    static void Main()
+    public static void SampleMethodThree()
     {
-        int[] arr = { 3, 1, 3 };
-        List<int> ans = findTwoElements(arr);
-        Console.WriteLine(ans[0] + " " + ans[1]);
+        Console.WriteLine("Sample Method Three Invoked");
     }
 }
