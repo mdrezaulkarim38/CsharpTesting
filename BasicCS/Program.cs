@@ -1,29 +1,40 @@
 ﻿using System;
 namespace BasicCS;
 
-public delegate void SampleDelegate();
 public class Program
 {
+    public const int cmToMeter = 100;
+    public readonly double PI = 3.1;
     static void Main(string[] args)
     {
-        SampleDelegate sm = new SampleDelegate(SampleMethodOne);
-        SampleDelegate sm1 = new SampleDelegate(SampleMethodTwo);
-        SampleDelegate sm2 = new SampleDelegate(SampleMethodThree);
-        SampleDelegate del3 = sm + sm1 + sm2 - sm1;
-        del3();
-        Console.WriteLine("Hello To World");
+        
     }
-    public static void SampleMethodOne()
+}
+
+public class Employee
+{
+    public string? Name { get; set; }
+    public string? Address { get; set; }
+    public virtual void Validate() 
     {
-        Console.WriteLine("SampleMethod one Invoked");
-    }
-    public static void SampleMethodTwo()
-    {
-        Console.WriteLine("SampleMethod Two Invoked");
+        CheckName();
+        CheckAddress();
     }
 
-    public static void SampleMethodThree()
+    private void CheckName() 
     {
-        Console.WriteLine("Sample Method Three Invoked");
+
+    }
+    private void CheckAddress()
+    {
+
+    }
+}
+
+public class Manager : Employee
+{
+    public override void Validate()
+    {
+        base.Validate();
     }
 }
