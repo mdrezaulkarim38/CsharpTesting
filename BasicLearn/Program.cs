@@ -1,12 +1,16 @@
 ﻿using System;
-using System.Collections;
 namespace BasicLearn;
 
 public class Program
 {
     static void Main(string[] args)
     {
-        int[] arr = { 1, 2, 3, 4, 5 };
-        ArrayList myList = new ArrayList();
+        int i = 23;
+        double d = 4.3443;
+        char c = 'a';
+        string name = "Rezaul Karim";
+        bool isTodayOffDay = true;
+        Console.WriteLine($"Name is: {name}. I value {i} d value is {d}");
+        Console.WriteLine(c + " " + isTodayOffDay);
     }
 }
