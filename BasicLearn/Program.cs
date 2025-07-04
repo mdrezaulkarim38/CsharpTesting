@@ -1,13 +1,12 @@
 ﻿using System;
+using System.Collections;
 namespace BasicLearn;
 
 public class Program
 {
     static void Main(string[] args)
     {
-        int i = 1;
-        int I = 0;
-        Console.WriteLine(i);
-        Console.WriteLine("Hello");
+        int[] arr = { 1, 2, 3, 4, 5 };
+        ArrayList myList = new ArrayList();
     }
 }
