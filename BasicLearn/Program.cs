@@ -13,11 +13,14 @@ public class Program
     }
 }
 
-public class Car
+public class Patient
 {
-    public string model;
-    public Car()
-    {
-        model = "Mustang";
-    }
+    public string Name { get; set; }
+    public string Address { get; set; }
+    public Doctor Doctor{ get; set; }
+}
+
+public class Doctor
+{
+    public string Name { get; set;}
 }
