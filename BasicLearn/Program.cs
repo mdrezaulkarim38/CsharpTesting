@@ -1,33 +1,41 @@
 ﻿using System;
 namespace BasicLearn;
 
-public class Program
+public class Calculation
 {
-    public static void Main()
+    int sum = 0;
+    int count = 0;
+    float average;
+    public void CalAverage()
     {
-        classA a = new classC();
-        console.WriteLine(a.Print());
-    }
-    public class classA
-    {
-        public virtual string Print()
+        if (count == 0)
+        throw (new CountIsZeroException("Zero count in DoAverage"));
         {
-            return "classA";
+            average = (float)sum / count;
+            Console.WriteLine("Program executed successfully");
         }
     }
+}
 
-    public class classB : classA
+public class CountIsZeroException : ApplicationException
+{
+    public CountIsZeroException(string message) : base(message)
+    { }
+}
+
+class Program
+{
+    static void Main(string[] args)
     {
-        public override string Print()
+        Calculation c = new Calculation();
+        try
         {
-            return "classB";
+            c.CalAverage();
         }
-    }
-    public class classC : classB
-    {
-        public override string Print()
+        catch (CountIsZeroException e)
         {
-            return "ClassC";
+            Console.WriteLine("Count is ZeroException: {0}", e.Message);
         }
+        Console.WriteLine("");
     }
 }
