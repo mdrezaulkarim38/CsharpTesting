@@ -3,13 +3,31 @@ namespace BasicLearn;
 
 public class Program
 {
-    static void Main(string[] args)
+    public static void Main()
     {
-        int number1 = 10, number2 = 20;
-        Console.WriteLine(number1 + " before " + number2);
-        int temp = number1;
-        number1 = number2;
-        number2 = temp;
-        Console.WriteLine(number1 + " after " + number2);
+        classA a = new classC();
+        console.WriteLine(a.Print());
+    }
+    public class classA
+    {
+        public virtual string Print()
+        {
+            return "classA";
+        }
+    }
+
+    public class classB : classA
+    {
+        public override string Print()
+        {
+            return "classB";
+        }
+    }
+    public class classC : classB
+    {
+        public override string Print()
+        {
+            return "ClassC";
+        }
     }
 }
