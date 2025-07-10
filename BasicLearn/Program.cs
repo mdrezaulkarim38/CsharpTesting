@@ -1,10 +1,17 @@
 ﻿using System;
 namespace BasicLearn;
+
+
 class Program
 {
-    public static void Main(string[] args)
+    static void Main(string[] args)
     {
-        int[] i = new int[0];
-        Console.WriteLine(i[0]); 
+        int a = 5;
+        fun1(ref a);
+        Console.WriteLine(a);
+    }
+    static void fun1(ref int a)
+    {
+        a = a * a;
     }
 }
