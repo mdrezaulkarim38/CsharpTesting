@@ -27,4 +27,10 @@ public class WeatherForecastController : ControllerBase
             })
             .ToArray();
     }
+
+    [HttpGet("myName/:{name}")]
+    public string GetName(string name)
+    {
+        return "I love "+ name;
+    }
 }
