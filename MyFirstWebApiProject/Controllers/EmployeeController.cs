@@ -1,4 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using MyFirstWebApiProject.Data;
+using MyFirstWebApiProject.Models;
 
 namespace MyFirstWebApiProject.Controllers;
 [Route("api/[controller]")]
@@ -6,8 +8,19 @@ namespace MyFirstWebApiProject.Controllers;
 public class EmployeeController : ControllerBase
 {
     [HttpGet]
-    public string Get()
+    public ActionResult<Employee> GetAllEmployees()
     {
-        return "Returning From EmployeeController";
+        var employee =  EmployeeData.Employees.ToList();
+        return Ok(employee);
+    }
+
+    [HttpGet("{id}")]
+    public ActionResult<Employee> GetEmployeeById(int id)
+    {
+        var employee = EmployeeData.Employees.FirstOrDefault(e => e.Id == id);
+        if(employee == null)
+            return NotFound("Employee with ID {id} not Found");
+        
+        return Ok(employee);
     }
 }
