@@ -1,12 +1,21 @@
 ﻿namespace CoreLearning;
+
 public static class Program
 {
     public static void Main(string[] args)
     {
-        int i = 1000;
-        double d = 1000.23;
-        string s = "abcd1234";
-        bool b = true;
-             
+        char letter;
+        Console.WriteLine("Enter any letter: ");
+        letter = Convert.ToChar(Console.ReadLine());
+        letter = char.ToLower(letter);
+        if (letter == 'a' || letter == 'i' || letter == 'o' || letter == 'e'  || letter == 'u')
+        {
+            Console.WriteLine("You entered vowel character."+letter);
+        }
+        else
+        {
+            Console.WriteLine("You entered consonant character."+letter);
+        }
+
     }
 }
