@@ -12,12 +12,12 @@ public static class Program
         {
             case 1:
                 Console.WriteLine("Fahrenheit: ");
-                double fahrenheit = double.Parse(Console.ReadLine());
+                double fahrenheit = double.Parse(Console.ReadLine()!);
                 Console.WriteLine("Fahrenheit: " + ((fahrenheit - 32) / 1.8) );
                 break;
             case 2:
                 Console.WriteLine("Celsius: ");
-                double celsius = double.Parse(Console.ReadLine());
+                double celsius = double.Parse(Console.ReadLine()!);
                 Console.WriteLine("Celsius: " + ((celsius*1.8)+32));
                 break;
             default:
