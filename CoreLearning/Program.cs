@@ -4,24 +4,25 @@ public static class Program
 {
     public static void Main(string[] args)
     {
-        int digit;
-        Console.Write("Enter a number: ");
-        digit = Convert.ToInt32(Console.ReadLine());
-        switch (digit)
+        Console.WriteLine("Temperature Converter Started");
+        Console.WriteLine("Choose 1. Fahrenheit to Celsius");
+        Console.WriteLine("Choose 2. Celsius to Fahrenheit");
+        int choice = Convert.ToInt32(Console.ReadLine());
+        switch (choice)
         {
             case 1:
-                Console.Write("You Entered one ");
+                Console.WriteLine("Fahrenheit: ");
+                double fahrenheit = double.Parse(Console.ReadLine());
+                Console.WriteLine("Fahrenheit: " + ((fahrenheit - 32) / 1.8) );
                 break;
             case 2:
-                Console.Write("You Entered two ");
-                break;
-            case 3:
-                Console.Write("You Entered three ");
+                Console.WriteLine("Celsius: ");
+                double celsius = double.Parse(Console.ReadLine());
+                Console.WriteLine("Celsius: " + ((celsius*1.8)+32));
                 break;
             default:
-                Console.Write("You Entered greater then one two three ");
+                Console.WriteLine("Please enter a valid option");
                 break;
         }
-        
     }
 }
