@@ -4,17 +4,15 @@
     {
         static void reverseArray(int[] arr)
         {
-            int n = arr.Length;
-            int[] temp = new int[n];
-
-            for (int i = 0; i < n; i++)
+            int left = 0, right = arr.Length - 1;
+            while (left < right)
             {
-                temp[i] = arr[n - i - 1];
-            }
-
-            for (int i = 0; i < n; i++)
-            {
-                arr[i] = temp[i];
+                int temp = arr[left];
+                arr[left] = arr[right];
+                arr[right] = temp;
+                
+                left++;
+                right--;
             }
         }
         static void Main(string[] args)
