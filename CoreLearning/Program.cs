@@ -2,27 +2,33 @@
 {
     public class Program
     {
-        static void reverseArray(int[] arr)
+        static int Setmini(int[] A, int N)
         {
-            int left = 0, right = arr.Length - 1;
-            while (left < right)
+            int mini = A[0];
+            for (int i = 1; i < N; i++)
             {
-                int temp = arr[left];
-                arr[left] = arr[right];
-                arr[right] = temp;
-                
-                left++;
-                right--;
+                mini = mini > A[i] ? A[i] : mini; 
             }
+
+            return mini;
+        }
+        static int SetMax(int[] A, int N)
+        {
+            int max = A[0];
+            for (int i = 1; i < N; i++)
+            {
+                max = max < A[i] ? A[i] : max; 
+            }
+
+            return max;
         }
         static void Main(string[] args)
         {
-            int[] arr = {1, 2, 3, 4, 5, 6, 7, 8, 9};
-            reverseArray(arr);
-            for (int i = 0; i < arr.Length; i++)
-            {
-                Console.WriteLine(arr[i]);
-            }
+            int[] A = { 4, 9, 6, 5, 2, 3 };
+            int N = 6;
+            
+            Console.WriteLine(Setmini(A, N));
+            Console.WriteLine(SetMax(A, N));
         }
     }
 }
