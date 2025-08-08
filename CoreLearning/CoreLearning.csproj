@@ -7,4 +7,9 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <ItemGroup>
+      <Folder Include="DesignPatterns\" />
+      <Folder Include="SOLID\" />
+    </ItemGroup>
+
 </Project>
