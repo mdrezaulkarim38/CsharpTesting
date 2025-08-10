@@ -1,10 +1,20 @@
-﻿// Encapsulations
+﻿using System;
+using CoreLearning.SOLID;
 
-using CoreLearning.OopPrinciples.Encapsulation;
+namespace CsharpTesting.CoreLearning
+{
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+            BankAccount johnsAccount = new BankAccount(123456);
+            johnsAccount.Deposit(1000);
+            johnsAccount.Withdraw(120);
+            
+            StatementPrinter printer = new StatementPrinter();
+            printer.Print(johnsAccount);
+            
+        }
+    }
+}
 
-BankAccount _bankAccount = new BankAccount(100);
-Console.WriteLine(_bankAccount.GetBalance());
-_bankAccount.Deposit(50);
-Console.WriteLine(_bankAccount.GetBalance());
-_bankAccount.Withdraw(-20);
-Console.WriteLine(_bankAccount.GetBalance());
