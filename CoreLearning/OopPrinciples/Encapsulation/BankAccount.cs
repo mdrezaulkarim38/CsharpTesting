@@ -14,7 +14,7 @@ public class BankAccount
         {
             throw new ArgumentException("Deposit Amount must be positive");
         }
-        this.balance = amount;
+        this.balance += amount;
     }
 
     public void Withdraw(decimal amount)

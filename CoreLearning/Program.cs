@@ -1,5 +1,8 @@
 ﻿using CoreLearning.OopPrinciples.Encapsulation;
 
-BadBankAccount badBankAccount = new BadBankAccount();
-badBankAccount.Balance = -50;
-Console.WriteLine(badBankAccount.Balance);
+BankAccount bankAccount = new BankAccount(100);
+Console.WriteLine(bankAccount.GetBalance());
+bankAccount.Deposit(50);
+Console.WriteLine(bankAccount.GetBalance());
+bankAccount.Withdraw(25);
+Console.WriteLine(bankAccount.GetBalance());
