@@ -8,6 +8,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreLearning", "CoreLearnin
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyFirstWebApiProject", "MyFirstWebApiProject\MyFirstWebApiProject.csproj", "{D3345603-6171-4AAD-9804-78B1B22EF1DA}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GameStore", "GameStore", "{2FA4D0E7-D3F9-4F01-B9B5-581AE9BA814A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FIrstProjectBlazor", "GameStore\FIrstProjectBlazor\FIrstProjectBlazor.csproj", "{3AD9DA4B-CD54-464A-BDB7-10766C2601CF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -26,11 +30,18 @@ Global
 		{D3345603-6171-4AAD-9804-78B1B22EF1DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D3345603-6171-4AAD-9804-78B1B22EF1DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D3345603-6171-4AAD-9804-78B1B22EF1DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3AD9DA4B-CD54-464A-BDB7-10766C2601CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3AD9DA4B-CD54-464A-BDB7-10766C2601CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3AD9DA4B-CD54-464A-BDB7-10766C2601CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3AD9DA4B-CD54-464A-BDB7-10766C2601CF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DFFE6C96-4647-498C-9F7F-D102688161B7}
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3AD9DA4B-CD54-464A-BDB7-10766C2601CF} = {2FA4D0E7-D3F9-4F01-B9B5-581AE9BA814A}
 	EndGlobalSection
 EndGlobal
