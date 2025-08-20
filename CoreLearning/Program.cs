@@ -1,13 +1,9 @@
-﻿ushort num1 = 123;
-            
-//UInt32 num2 = 456;
-uint num2 = 456;
-// UInt64 num3 = 789;
-ulong num3 = 789;
-Console.WriteLine($"ushort Min Value:{ushort.MinValue} and Max Value:{ushort.MaxValue}");
-Console.WriteLine($"short Size:{sizeof(ushort)} Byte");
-Console.WriteLine($"uint Min Value:{uint.MinValue} and Max Value:{uint.MaxValue}");
-Console.WriteLine($"uint Size:{sizeof(uint)} Byte");
-Console.WriteLine($"ulong Min Value:{ulong.MinValue} and Max Value:{ulong.MaxValue}");
-Console.WriteLine($"ulong Size:{sizeof(ulong)} Byte");
-Console.ReadKey();
+﻿int a = 101;
+int c = 0x123f;
+int d = 0b1111;
+Console.WriteLine($"Decimal Literal: {a}");
+Console.WriteLine($"Hexa-Decimal Literal: {c}");
+Console.WriteLine($"Binary Literal: {d}");
+
+int  s = "Testing";
+Console.WriteLine(s);
