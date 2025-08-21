@@ -5,5 +5,5 @@ Console.WriteLine($"Decimal Literal: {a}");
 Console.WriteLine($"Hexa-Decimal Literal: {c}");
 Console.WriteLine($"Binary Literal: {d}");
 
-int  s = "Testing";
+int  s = 0;
 Console.WriteLine(s);
