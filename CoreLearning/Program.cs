@@ -1,15 +1,3 @@
-﻿using System.Collections;
+﻿List<int> numbers = [1, 2, 3, 4];
+List<string> strings = ["Tim", "Corey", "Sue"];
 
-namespace CoreLearning;
-
-public class Program
-{
-    public static void Main(string[] args)
-    {
-        List<int> ages = new List<int>();
-        ages.Add(23);
-        ages.Add(24);
-        Console.WriteLine();
-        Console.WriteLine("Press enter to Shut down...");
-    }
-}
