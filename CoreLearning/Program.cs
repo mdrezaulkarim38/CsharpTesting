@@ -35,13 +35,19 @@ public class Program
             right--;
         }
     }
+    static void Print(string str)
+    {
+        Console.Write(str);
+    }
+    static void Println(string str)
+    {
+        Console.WriteLine(str);
+    }
     static void Main()
     {
-        int[] arr = { 1, 4, 3, 2, 6, 5 };
-        reverseArray(arr);
-        for (int i = 0; i < arr.Length; i++)
-        {
-            Console.Write(arr[i] + " ");
-        }
+        bool isValid = true;
+        Println(isValid.ToString());
+        sbyte level = 127;
+        Println(level.ToString());
     }
 }
