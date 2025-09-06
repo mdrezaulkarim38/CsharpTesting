@@ -1,20 +1,21 @@
 ﻿using System;
+using CoreLearning.OopPrinciples.ClassFiles;
+
 namespace CoreLearning;
 
 public class Program
 {
     static void Main()
     {
-        Calculator calObject = new Calculator();
-        int result = calObject.CalculateSum(10, 20);
-        Console.WriteLine(result);
-    }
-}
+        Test obj = new Test();
+        Console.WriteLine($"i = {obj.i}");
+        Console.WriteLine($"s = {obj.s}");
+        Console.WriteLine($"b = {obj.b}");
 
-public class Calculator
-{
-    public int CalculateSum(int no1, int no2)
-    {
-        return no1 + no2;
+        if (obj.s == null)
+        {
+            Console.WriteLine("s = null");
+        }
+        
     }
 }
