@@ -7,15 +7,8 @@ public class Program
 {
     static void Main()
     {
-        Test obj = new Test();
-        Console.WriteLine($"i = {obj.i}");
-        Console.WriteLine($"s = {obj.s}");
-        Console.WriteLine($"b = {obj.b}");
-
-        if (obj.s == null)
-        {
-            Console.WriteLine("s = null");
-        }
+        Employee e1 = new Employee();
+        e1.Display();
         
     }
 }
