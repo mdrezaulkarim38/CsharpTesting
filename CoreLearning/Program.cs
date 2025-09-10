@@ -7,8 +7,9 @@ public class Program
 {
     static void Main()
     {
-        Employee e1 = new Employee();
-        e1.Display();
-        
+        Console.WriteLine("Hello, World!");
+        Console.Write("Enter your name: ");
+        string name = Console.ReadLine();
+        Console.WriteLine("Assalmualikum "+ name + "!");
     }
 }
