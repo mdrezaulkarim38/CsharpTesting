@@ -1,6 +1,4 @@
-﻿using System;
-using CoreLearning.OopPrinciples.ClassFiles;
-using CoreLearning.LogicalProgram.SwappingProgram;
+﻿using CoreLearning.LogicalProgram.Fibonacci;
 
 namespace CoreLearning;
 
@@ -8,8 +6,9 @@ public class Program
 {
     static void Main()
     {
-        SwappingCode tp = new SwappingCode();
-        tp.SwappingValue(10, 20);
-        tp.SwappingValueMulDiv(10, 20);
+        int number = 10;
+        FibonacciCode fc = new FibonacciCode();
+        fc.FibonacciSeries(0, 1, 1, number);
+        Console.WriteLine("\n"+ fc.NthFibonacciNumber(number - 1));
     }
 }
