@@ -65,7 +65,28 @@ public class LinqCode
         var distinct = duplicateList.Distinct();
         Console.WriteLine("Distinct: " + string.Join(",", distinct));
 
-        
+        Console.WriteLine("Total count: " + intList.Count());
+        Console.WriteLine("Count > 5 : " + intList.Count(n => n > 5));
+
+        var listA = new List<int> { 1, 2, 3, 4 };
+        var listB = new List<int> { 3, 4, 5, 6 };
+        var intersect = listA.Intersect(listB);
+        var except = listA.Except(listB);
+        var union = listA.Union(listB);
+        Console.WriteLine("Intersect: " + string.Join(", ", intersect));
+        Console.WriteLine("Except: " + string.Join(", ", except));
+        Console.WriteLine("Union: " + string.Join(", ", union));
+
+        List<Person> people = new List<Person>
+        {
+            new Person { Name = "Alice", Age = 30, City = "New York" },
+            new Person { Name = "Bob", Age = 25, City = "London" },
+            new Person { Name = "Charlie", Age = 30, City = "New York" },
+            new Person { Name = "David", Age = 35, City = "Paris" }
+        };
+
+        var age30 = people.Where(p => p.Age == 30);
+        Console.WriteLine("People aged 30: "+ string.Join(", ", age30.Select(p => p.Name)));
     }
 }
 
