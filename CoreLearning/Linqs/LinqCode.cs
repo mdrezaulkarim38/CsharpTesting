@@ -86,7 +86,27 @@ public class LinqCode
         };
 
         var age30 = people.Where(p => p.Age == 30);
-        Console.WriteLine("People aged 30: "+ string.Join(", ", age30.Select(p => p.Name)));
+        Console.WriteLine("People aged 30: " + string.Join(", ", age30.Select(p => p.Name)));
+
+        var namesAndCities = people.Select(p => new { p.Name, p.City });
+        foreach (var entry in namesAndCities)
+            Console.WriteLine($"Name: {entry.Name}, City: {entry.City}");
+
+        var orderedByAge = people.OrderBy(p => p.Age);
+        Console.WriteLine("Ordered by Age: " + string.Join(", ", orderedByAge.Select(p => p.Name)));
+
+        var groupedByCity = people.GroupBy(p => p.City);
+        foreach (var group in groupedByCity)
+        {
+            Console.WriteLine($"City: {group.Key}");
+            foreach (var person in group)
+                Console.WriteLine($" - {person.Name}");
+        }
+        
+        var firstFromLondon = people.FirstOrDefault(p => p.City == "London");
+        Console.WriteLine("First from London: " + (firstFromLondon?.Name ?? "None"));
+        Console.WriteLine("Any from Paris? " + people.Any(p => p.City == "Paris"));
+        Console.WriteLine("All over 20? " + people.All(p => p.Age > 20));
     }
 }
 
