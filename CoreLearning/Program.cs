@@ -8,6 +8,6 @@ public class Program
     static void Main()
     {
         LinqCode linqCode = new LinqCode();
-        linqCode.TestIQueryable();
+        linqCode.TestingExtension();
     }
 }
