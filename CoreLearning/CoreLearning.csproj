@@ -17,6 +17,7 @@
         <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
         <PrivateAssets>all</PrivateAssets>
       </PackageReference>
+      <PackageReference Include="Microsoft.ML" Version="4.0.2" />
     </ItemGroup>
 
 </Project>
