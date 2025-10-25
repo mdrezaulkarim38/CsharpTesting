@@ -5,8 +5,12 @@ namespace CoreLearning.EFCore;
 
 public class EFCoreDbContext : DbContext
 {
-    public EFCoreDbContext(DbContextOptions<EFCoreDbContext> options) : base(options)
+    public EFCoreDbContext(DbContextOptions<EFCoreDbContext> options)
+        : base(options)
     { }
+
+    // Add this parameterless constructor for console app usage
+    public EFCoreDbContext() { }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
@@ -15,6 +19,7 @@ public class EFCoreDbContext : DbContext
             optionsBuilder.UseSqlServer("Server=SHUVO\\SQLEXPRESS;Database=LearningEFCore;Trusted_Connection=True;TrustServerCertificate=True;");
         }
     }
+
     public DbSet<Student> Students { get; set; }
     public DbSet<Branch> Branches { get; set; }
 }
